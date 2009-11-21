@@ -1,0 +1,204 @@
+html {
+    height: 100%;
+    margin-bottom: 1px;
+}
+
+.logo {
+    margin-top: 10px;
+}
+
+.tooltip {
+    display: none;
+    z-index: 1;
+}
+
+.demo {
+    float: left;
+    margin: 4px 4px;
+    border: 1px solid #666;
+    -moz-border-radius: 2px; 
+    -webkit-border-radius: 2px;
+    z-index: 1000;
+    width: 52px;
+    height: 42px;
+}
+
+.demo .thumb {
+    border: 1px solid #fff;
+    position: absolute;
+    -moz-border-radius: 2px; 
+    -webkit-border-radius: 2px;
+    display: block;
+}
+
+.demo .thumb-overlay-youtube {
+    opacity: 0.8;
+    border: 1px solid #fff;
+    position: absolute;
+    -moz-border-radius: 2px; 
+    -webkit-border-radius: 2px;
+    display: block;
+    cursor: pointer;
+}
+
+.demo .thumb-overlay-none {
+    border: 1px solid #fff;
+    position: absolute;
+    -moz-border-radius: 2px; 
+    -webkit-border-radius: 2px;
+    display: block;
+}
+
+.demo.selected {
+    margin: 0px;
+    border: 5px solid yellow;
+}
+
+.tooltip { 
+    display:none; 
+    background:url('../img/tooltip/black_arrow.png'); 
+    height:122px; 
+    padding:0px; 
+    width:210px; 
+    font-size:11px; 
+    color:#fff; 
+    position: relative;
+    text-align: center;
+} 
+
+.tooltip-inner {
+    padding: 8px 20px;
+    padding-top: 32px;
+}
+
+.tooltip .links {
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    right: 10px;
+}
+
+.tooltip .links a { 
+    color:#ad4; 
+    font-size:11px; 
+    font-weight:bold; 
+}
+
+.tooltip .title {
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: bold;
+}
+
+.spacer {
+    height: 90px;
+}
+
+.footer {
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+    color: #aaa;
+}
+
+.marshals {
+    font-size: 20px;
+    font-weight: bold;
+    padding-right: 4px;
+}
+
+.tabs {
+    margin: 0;
+    padding: 0;
+    list-style-type:none;
+    font-size: 12px;
+}
+
+.tabs a {
+    font-weight: bold;
+    font-size: 12px;
+    padding: 1px 3px;
+}
+
+.tabs a.current {
+    background-color: yellow;
+}
+
+.panes {
+    margin-top: 20px;
+}
+
+.intro {
+    text-align: center;
+}
+
+.music {
+    text-align: left;
+    width: 390px;
+    margin-left: 100px;
+    border-bottom: 1px dashed #ddd;
+}
+
+.music .title {
+    font-weight: bold;
+}
+
+.music .date {
+    color: #999;
+    font-size: 11px;
+}
+
+.music .links {
+    float: right;
+    font-size: 11px;
+}
+
+.graphics {
+    text-align: left;
+    width: 390px;
+    margin-left: 100px;
+    border-bottom: 1px dashed #ddd;
+}
+
+.graphics .title {
+    font-weight: bold;
+}
+
+.graphics .date {
+    color: #999;
+    font-size: 11px;
+}
+
+.graphics .links {
+    float: right;
+    font-size: 11px;
+}
+
+.friend {
+    text-align: left;
+    width: 390px;
+    margin-left: 100px;
+    border-bottom: 1px dashed #ddd;
+    line-height: 16px;
+    padding-bottom: 4px;
+    margin-bottom: 6px;
+}
+
+.friend .nick {
+    display: block;
+    float: left;
+    font-weight: bold;
+    padding-left: 24px;
+    margin-right: 10px;
+    background: transparent url('http://www.pouet.net/avatars/talk.gif') no-repeat;
+}
+
+.friend .role {
+    color: #999;
+    font-size: 11px;
+}
+
+.friend .links {
+    float: right;
+    font-size: 11px;
+}
+
