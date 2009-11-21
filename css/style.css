@@ -9,36 +9,40 @@ html {
 
 .tooltip {
     display: none;
-    z-index: 1;
+    z-index: 1000;
 }
 
 .demo {
     float: left;
     margin: 4px 4px;
     border: 1px solid #666;
-    -moz-border-radius: 2px; 
-    -webkit-border-radius: 2px;
-    z-index: 1000;
     width: 52px;
     height: 42px;
+    -moz-border-radius: 2px; 
+    -webkit-border-radius: 2px;
+    position: relative;
 }
 
 .demo .thumb {
     border: 1px solid #fff;
     position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
     -moz-border-radius: 2px; 
     -webkit-border-radius: 2px;
-    display: block;
 }
 
 .demo .thumb-overlay-youtube {
     opacity: 0.8;
     border: 1px solid #fff;
     position: absolute;
-    -moz-border-radius: 2px; 
-    -webkit-border-radius: 2px;
+    left: 0;
+    top: 0;
     display: block;
     cursor: pointer;
+    -moz-border-radius: 2px; 
+    -webkit-border-radius: 2px;
 }
 
 .demo .thumb-overlay-none {
@@ -136,6 +140,7 @@ html {
     width: 390px;
     margin-left: 100px;
     border-bottom: 1px dashed #ddd;
+    position: relative;
 }
 
 .music .title {
@@ -148,8 +153,9 @@ html {
 }
 
 .music .links {
-    float: right;
     font-size: 11px;
+    right: 0px;
+    position: absolute;
 }
 
 .graphics {
@@ -157,6 +163,7 @@ html {
     width: 390px;
     margin-left: 100px;
     border-bottom: 1px dashed #ddd;
+    position: relative;
 }
 
 .graphics .title {
@@ -169,8 +176,9 @@ html {
 }
 
 .graphics .links {
-    float: right;
     font-size: 11px;
+    right: 0px;
+    position: absolute;
 }
 
 .friend {
@@ -181,6 +189,7 @@ html {
     line-height: 16px;
     padding-bottom: 4px;
     margin-bottom: 6px;
+    position: relative;
 }
 
 .friend .nick {
@@ -198,7 +207,8 @@ html {
 }
 
 .friend .links {
-    float: right;
     font-size: 11px;
+    right: 0px;
+    position: absolute;
 }
 
