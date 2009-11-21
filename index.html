@@ -181,8 +181,6 @@ products: [
                                     <img class="thumb" src="img/thumbs/{{product.thumb}}" width="50" height="40">
                                     {% if product.youtube %}
                                         <img class="thumb-overlay-youtube" src="img/play-overlay.png" width="50" height="40">
-                                    {% else %}
-                                        <img class="thumb-overlay-none" width="50" height="40">
                                     {% endif %}
                                 </div>
                                 <div class="tooltip">
@@ -300,7 +298,7 @@ products: [
                 };
 
                 $(".tabs").tabs(".panes > div", {
-                    initialIndex: 1, // initially open "demos" page
+                    initialIndex: 1 // initially open "demos" page
                 }).history();
                 
                 $(".demo").tooltip({
