@@ -287,6 +287,18 @@ products: [
         </div>
         <script type="text/javascript" charset="utf-8">
             $(function() {
+                // http://stackoverflow.com/questions/689376/how-to-change-the-video-playing-in-youtube-embedded-player
+                var play = function(id) {
+                    var html  = '';
+                    html += '<object width="496" height="391">';
+                    html += '<param name="movie" value="http://www.youtube.com/v/'+id+'"></param>';
+                    html += '<param name="autoplay" value="1">';
+                    html += '<param name="wmode" value="transparent"></param>';
+                    html += '<embed src="http://www.youtube.com/v/'+id+'&autoplay=1" type="application/x-shockwave-flash" wmode="transparent" width="496" height="391"></embed>';
+                    html += '</object>';
+                    return html;
+                };
+
                 $(".tabs").tabs(".panes > div", {
                     initialIndex: 1, // initially open "demos" page
                 }).history();
@@ -305,7 +317,8 @@ products: [
                     $('.demo.selected').removeClass('selected');
                     var demo = $(this);
                     demo.addClass('selected');
-                    $('.video-player object embed').attr('src', 'http://www.youtube.com/v/' + demo.attr('video') + '&hl=en&fs=1&&autoplay=1');
+                    
+                    $('.video-player').html(play(demo.attr('video')));
                 });
             });
         </script>
