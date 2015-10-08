@@ -154,8 +154,7 @@ html {
 
 .music .links {
     font-size: 11px;
-    right: 0px;
-    position: absolute;
+    float: right;
 }
 
 .graphics {
@@ -177,8 +176,7 @@ html {
 
 .graphics .links {
     font-size: 11px;
-    right: 0px;
-    position: absolute;
+    float: right;
 }
 
 .friend {
@@ -208,7 +206,6 @@ html {
 
 .friend .links {
     font-size: 11px;
-    right: 0px;
-    position: absolute;
+    float: right;
 }
 
